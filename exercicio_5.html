@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <h1>Conversão de horas e minutos em segundos</h1>
+    <h3>1 hora equivale a 3600 segundo</h3>
+    <h3>1 minuto equivale a 60 segundos</h3>
+    <div id="total"></div>  
+    <script>
+        var hora = prompt ("Digite a Hora");
+        var min = prompt ("Digite o Minuto");
+        var ss = prompt("Digite os segundos");
+
+        const totalmin = 60;
+        const totalhrs = 3600;
+        var horasegundo;
+        var minutosegundo;
+
+        minutosegundo = (Number(min)* totalmin);
+        horasegundo = (Number(hora)* totalhrs);
+
+        document.getElementById("total").innerHTML = "<h1>Hora:" + hora + ":" + min + ":" + ss + "</h1>" + "<br>Horas Convertidas em segundos: " + horasegundo  +  "<br>Minutos convertidos em segundos: " + minutosegundo;
+
+    </script>
+</body>
+</html>
